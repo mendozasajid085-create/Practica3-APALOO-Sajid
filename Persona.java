@@ -1,0 +1,37 @@
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Persona {
+    private  String nombre;
+    private  LocalDate fechanacimiento;
+    private  String direccion;
+
+    public Persona(String nombre, LocalDate fechanacimiento, String direccion) {
+        this.nombre = nombre;
+        this.fechanacimiento = fechanacimiento;
+        this.direccion = direccion;
+    }
+
+    public boolean esadultomayor() {
+        return obteneredad() >= 60;
+    }
+
+    public int obteneredad() {
+        return Period.between(this.fechanacimiento, LocalDate.now()).getYears();
+    }
+    //Getters y setters
+
+    public String getnombre() { return nombre; }
+    public void setnombre(String nombre) { this.nombre = nombre; }
+    
+    public LocalDate getfechanacimiento() { return fechanacimiento; }
+    public void setfechanacimiento(LocalDate fechanacimiento) { this.fechanacimiento = fechanacimiento; }
+    
+    public String getdireccion() { return direccion; }
+    public void setdireccion(String direccion) { this.direccion = direccion; }
+
+    @Override
+    public String toString() {
+        return "Persona [nombre=" + nombre + ", edad=" + obteneredad() + ", direccion=" + direccion + "]";
+    }
+}
