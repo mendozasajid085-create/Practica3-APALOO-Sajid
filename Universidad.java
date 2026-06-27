@@ -2,7 +2,7 @@ public class Universidad {
     private String nombre;
     private String ciudad;
     private int fundacion;
-    
+
     private Estudiante[] estudiantes;
     private Trabajador[] trabajadores;
     private Departamento[] departamentos;
@@ -10,20 +10,23 @@ public class Universidad {
     private int numestudiantes = 0;
     private int numtrabajadores = 0;
 
+
     public Universidad(String nombre, String ciudad, int fundacion) {
         this.nombre = nombre;
         this.ciudad = ciudad;
         this.fundacion = fundacion;
-        this.estudiantes = new Estudiante[1000]; // Capacidades de ejemplo
-        this.trabajadores = new Trabajador[500];
-        this.departamentos = new Departamento[20];
+        this.estudiantes = new Estudiante[10];
+        this.trabajadores = new Trabajador[15];
+        this.departamentos = new Departamento[4];
     }
+
+
 
     public void registrarestudiante(Estudiante estudiante) {
         if (this.numestudiantes < this.estudiantes.length) {
             this.estudiantes[this.numestudiantes] = estudiante;
             this.numestudiantes++;
-            System.out.println("Estudiante registrado: " + estudiante.getnombre());
+            System.out.println("Estudiante registrado: " + estudiante.getNombre());
         }
     }
 
@@ -31,8 +34,37 @@ public class Universidad {
         if (this.numtrabajadores < this.trabajadores.length) {
             this.trabajadores[this.numtrabajadores] = trabajador;
             this.numtrabajadores++;
-            System.out.println("Trabajador contratado: " + trabajador.getnombre());
+            System.out.println("Trabajador contratado: " + trabajador.getNombre());
         }
+    }
+    public int buscarEstudianteRecursivo(Estudiante estudiante, int indice) {
+        if (indice >= this.numestudiantes || this.estudiantes[indice] == null) {
+            return -1;
+        }
+        if (this.estudiantes[indice].equals(estudiante)) {
+            return indice;
+        }
+        return buscarEstudianteRecursivo(estudiante, indice + 1);
+    }
+
+    public int buscarTrabajadorRecursivo(Trabajador trabajador, int indice) {
+        if (indice >= this.numtrabajadores || this.trabajadores[indice] == null) {
+            return -1;
+        }
+        if (this.trabajadores[indice].equals(trabajador)) {
+            return indice;
+        }
+        return buscarTrabajadorRecursivo(trabajador, indice + 1);
+    }
+
+    public int buscarDepartamentoRecursivo(Departamento departamento, int indice) {
+        if (indice >= this.departamentos.length || this.departamentos[indice] == null) {
+            return -1;
+        }
+        if (this.departamentos[indice].equals(departamento)) {
+            return indice;
+        }
+        return buscarDepartamentoRecursivo(departamento, indice + 1);
     }
 
     public String getNombre() {

@@ -17,7 +17,7 @@ public class Departamento {
         if (this.numprofesores < this.profesores.length) {
             this.profesores[this.numprofesores] = profesor;
             this.numprofesores++;
-            System.out.println("Profesor " + profesor.getnombre() + " asignado al departamento " + this.nombre);
+            System.out.println("Profesor " + profesor.getNombre() + " asignado al departamento " + this.nombre);
         } else {
             System.out.println("El departamento está lleno.");
         }
@@ -29,6 +29,17 @@ public class Departamento {
             System.out.println(this.profesores[i].toString());
         }
     }
+
+    public int buscarProfesorRecursivo(PDI profesor, int indice) {
+        if (indice >= this.numprofesores || this.profesores[indice] == null) {
+            return -1;
+        }
+        if (this.profesores[indice].equals(profesor)) {
+            return indice;
+        }
+        return buscarProfesorRecursivo(profesor, indice + 1);
+    }
+
 
     public void setNombre(String nombre){this.nombre=nombre;}
     public String getNombre(){return nombre;}

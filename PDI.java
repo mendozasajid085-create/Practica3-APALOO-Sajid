@@ -15,11 +15,11 @@ public class PDI extends Trabajador {
     }
 
     public void investigar(String tema) {
-        System.out.println("El profesor " + this.getnombre() + " está realizando una investigación sobre: " + tema);
+        System.out.println("El profesor " + this.getNombre() + " está realizando una investigación sobre: " + tema);
     }
 
     public void impartirclase() {
-        System.out.println("El profesor " + this.getnombre() + " impartió clase. Tiene asignadas " + this.horasdocencia + " horas de docencia.");
+        System.out.println("El profesor " + this.getNombre() + " impartió clase. Tiene asignadas " + this.horasdocencia + " horas de docencia.");
     }
 
     public String getCategoria() {

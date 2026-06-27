@@ -12,26 +12,26 @@ public class Persona {
         this.direccion = direccion;
     }
 
-    public boolean esadultomayor() {
-        return obteneredad() >= 60;
+    public boolean esAdultoMayor() {
+        return obtenerEdad() >= 60;
     }
 
-    public int obteneredad() {
+    public int obtenerEdad() {
         return Period.between(this.fechanacimiento, LocalDate.now()).getYears();
     }
     //Getters y setters
 
-    public String getnombre() { return nombre; }
-    public void setnombre(String nombre) { this.nombre = nombre; }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
     
-    public LocalDate getfechanacimiento() { return fechanacimiento; }
-    public void setfechanacimiento(LocalDate fechanacimiento) { this.fechanacimiento = fechanacimiento; }
+    public LocalDate getFechaNacimiento() { return fechanacimiento; }
+    public void setFechaNacimiento(LocalDate fechanacimiento) { this.fechanacimiento = fechanacimiento; }
     
-    public String getdireccion() { return direccion; }
-    public void setdireccion(String direccion) { this.direccion = direccion; }
+    public String getDireccion() { return direccion; }
+    public void setDireccion(String direccion) { this.direccion = direccion; }
 
     @Override
     public String toString() {
-        return "Persona [nombre=" + nombre + ", edad=" + obteneredad() + ", direccion=" + direccion + "]";
+        return "Persona [nombre=" + nombre + ", edad=" + obtenerEdad() + ", direccion=" + direccion + "]";
     }
 }

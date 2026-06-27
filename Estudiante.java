@@ -4,16 +4,18 @@ public class Estudiante extends Persona {
     private String matricula;
     private double promedio;
     private LocalDate fechaingreso;
+    private CuentaAhorro cuentaahorro;
 
     public Estudiante(String nombre, LocalDate fechanacimiento, String direccion, String matricula, double promedio, LocalDate fechaingreso) {
         super(nombre, fechanacimiento, direccion);
         this.matricula = matricula;
         this.promedio = promedio;
         this.fechaingreso = fechaingreso;
+        this.cuentaahorro = null; 
     }
 
     public void inscribirmateria(String materia) {
-        System.out.println("Inscripción realizada. El estudiante " + this.getnombre() + " se inscribió a la materia: " + materia);
+        System.out.println("Inscripción realizada. El estudiante " + this.getNombre() + " se inscribió a la materia: " + materia);
     }
 
     public double calcularbeca() {
@@ -26,15 +28,15 @@ public class Estudiante extends Persona {
         }
     }
 
-    //Getters y setters
-    public void setMatricula(String matricula){this.matricula=matricula;}
-    public String getMatricula(){return matricula;}
+    public void setMatricula(String matricula) { this.matricula = matricula; }
+    public String getMatricula() { return matricula; }
 
-    public void setPromedio(double promedio){this.promedio=promedio;}
-    public double getPromedio(){return promedio;}
+    public void setPromedio(double promedio) { this.promedio = promedio; }
+    public double getPromedio() { return promedio; }
 
-    public void setFechaIngreso(LocalDate fechaingreso){this.fechaingreso=fechaingreso;}
-    public LocalDate getFechaIngreso(){return fechaingreso;}
+    public void setFechaingreso(LocalDate fechaingreso) { this.fechaingreso = fechaingreso; }
+    public LocalDate getFechaingreso() { return fechaingreso; }
 
-
+    public void setCuentaahorro(CuentaAhorro cuentaahorro) { this.cuentaahorro = cuentaahorro; }
+    public CuentaAhorro getCuentaahorro() { return cuentaahorro; }
 }

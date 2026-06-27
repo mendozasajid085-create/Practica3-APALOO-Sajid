@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class PAS extends Trabajador {
     private String area;
     private int nivel;

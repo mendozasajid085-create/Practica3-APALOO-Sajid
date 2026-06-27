@@ -13,7 +13,7 @@ public class EstudianteGrado extends Estudiante {
     }
 
     public void realizarproyecto() {
-        System.out.println("El estudiante " + this.getnombre() + " está desarrollando su proyecto de titulación en modalidad: " + this.titulacion);
+        System.out.println("El estudiante " + this.getNombre() + " está desarrollando su proyecto de titulación en modalidad: " + this.titulacion);
     }
 
     public void solicitartitulacion() {
