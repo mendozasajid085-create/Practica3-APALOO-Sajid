@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         
-        System.out.println("INTEGRACIÓN: ESTUDIANTE Y CUENTA AHORRO");
+        System.out.println("ESTUDIANTE Y CUENTA AHORRO");
         
         Estudiante estudianteuno = new Estudiante(
             "Axel Kevin", 
@@ -67,7 +67,7 @@ public class Main {
         universidad.contratartrabajador(trabajadoruno);
         
         // Búsqueda de estudiante existente
-        System.out.println("Buscando estudiante 'Axel Kevin'...");
+        System.out.println("Buscando estudiante: "+estudianteuno.getNombre());
         int posEstudiante = universidad.buscarEstudianteRecursivo(estudianteuno, 0);
         if (posEstudiante != -1) {
             System.out.println("Estudiante encontrado en la posición: " + posEstudiante);
@@ -76,7 +76,7 @@ public class Main {
         }
         
         // Búsqueda de trabajador existente
-        System.out.println("Buscando trabajador 'Ana Gómez'...");
+        System.out.println("Buscando trabajador"+trabajadoruno.getNombre());
         int posTrabajador = universidad.buscarTrabajadorRecursivo(trabajadoruno, 0);
         if (posTrabajador != -1) {
             System.out.println("Trabajador encontrado en la posición: " + posTrabajador);
@@ -93,7 +93,7 @@ public class Main {
             8.5, 
             LocalDate.of(2023, 8, 1)
         );
-        System.out.println("Buscando estudiante 'Juan Perez'...");
+        System.out.println("Buscando estudiante: "+estudianteFalso.getNombre());
         int posFalso = universidad.buscarEstudianteRecursivo(estudianteFalso, 0);
         if (posFalso != -1) {
             System.out.println("Estudiante encontrado en la posición: " + posFalso);

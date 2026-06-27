@@ -1,0 +1,113 @@
+commit a02cf1634feae9241a9a8ad872dc4d6f60d8d9ce
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Sat Jun 27 12:13:35 2026 -0600
+
+    Subidad de el diagrama uml al branch main para que no este en rojo y no me de estres
+
+commit b50fe5495608ae2e2da82b4729a9867ad2ecad71
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Sat Jun 27 12:12:49 2026 -0600
+
+    Subida de comits de las clases que no habia agregado al integrar las cuentas bancarias a los estudiantes y trabajadores
+
+commit 524eaf827eada86c6c2ee7d07637e0bec4345e6c
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Sat Jun 27 12:11:29 2026 -0600
+
+    Correcciones de gramatica y mejoras a la logica en los metodos y el main
+
+commit 0de9de5bfe5ce29bb221f16e67c551567f616b95
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 25 20:44:13 2026 -0600
+
+    Prueba de busqueda recursiva
+
+commit fe8de59a8093803b12c8b5c217e717c5928ebadb
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 25 20:18:26 2026 -0600
+
+    Agregacion de el metodo recursivo para busqueda de trabajadores y estudiantese en Depertamento y Universidad
+
+commit 5902539deb2775b1b4d86e6a861d1e1ad5401629
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 25 19:34:31 2026 -0600
+
+    Correccion de gramatica y comentarios inecesarios
+
+commit 6ffd1a38e23bac4fdf49de89cdc5e30563e724ae
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Wed Jun 10 21:59:16 2026 -0600
+
+    Creacion de la clase Main
+
+commit 41202c2c9fb44f35212c57464390699d9b3ec04f
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Wed Jun 10 21:40:39 2026 -0600
+
+    Modificacion de clase trabajador y Estudiante para implementacion de Cuenta ahorro y Cuenta Corriente
+
+commit 3b650be3def2cdf8068ae530176c3457ca3f5ef6
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:30:45 2026 -0600
+
+    Creacion del Main
+
+commit 1a8b32b2d6a16c5c598b0527ed28c0614b6d1d3a
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:30:33 2026 -0600
+
+    Creacion de la clase Doctor
+
+commit 3184c5bc1c7929007a36196d0f40e6912934d608
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:30:19 2026 -0600
+
+    Creacion de la clase Departamento
+
+commit a07979fec4cdb0d80c237f19ce96821494c6a567
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:30:05 2026 -0600
+
+    Creacion de la clase Universidad
+
+commit 7993459b761be7b726cd6e3f405f6a378b49e1f9
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:29:53 2026 -0600
+
+    Creacion de la clase EstudianteDoctorado
+
+commit 9edfe7b179dacfa594706b9d77c7799a5bbdaa73
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:29:39 2026 -0600
+
+    Creacion de la clase EstudianteGrado
+
+commit 940eebd7d1dda813f33bf3a087e0ad0fdcf12a5b
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:29:24 2026 -0600
+
+    Creacion de la clase Estudiante
+
+commit 6ba2009a55d83ed6a60bc6d5ec25de030913d7e1
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:29:11 2026 -0600
+
+    Creacion de la clase PDI
+
+commit da07d41df0720ce16c9ec28d20034825dfc95d16
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:28:58 2026 -0600
+
+    Creacion de la clase PAS
+
+commit 810e2eb76ca12acdda8edf452738dacdb1db33d7
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:28:14 2026 -0600
+
+    Clase Trabajador
+
+commit ca5ab89722ab36ce909dd82f8f7d8814baa28857
+Author: Sajid <sajidmendozamorlet013@gmail.com>
+Date:   Thu Jun 4 22:26:59 2026 -0600
+
+    Creacion de la clase persona
